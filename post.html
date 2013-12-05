@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="和歌もんGP(グランプリ)とは、伊豆市、天城を中心に伊豆の豊かな自然、温泉、グルメ、そして旅館などを題材にした五、七、五、七、七の和歌を詠んで、伊豆市各所に設けられた投稿BOXおよびwebページから投稿していただくという企画です。">
+<meta name="keywords" content="伊豆市,和歌,若者,wakamongp,GP,天城,toiz">
+<meta name="author" content="toizinc">
+<title>和歌もんグランプリ</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="./bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./js/functions.js"></script>
+<link href="./css/reset.css" rel="stylesheet" type="text/css">
+<link href="./css/post.css" rel="stylesheet" type="text/css">
+<!--縦書き-->
+<link href="./css/tategaki.css" rel="stylesheet" type="text/css">
+</script>
+</head>
+<body>
+<div id ="container">
+  <div id = "postArea">
+     <div id = 'waka-form-input'>  
+     	<div id = "waka-area">
+     	<p class = "waka-label odai-area">10-11月のお題
+     	<span class = "odai-area" id = "odai">紅葉</span></p>
+     	<p class = "waka-rule odai-area">お題からイメージを膨らませて、和歌を詠んでみてください。※お題以外の投稿でも結構です。</p>
+     	</div>
+      <form>
+        <label for = 'name' class = "waka-label">名前</label>
+        <input type = 'text' name = 'name' id ='name'>
+        <p class = "waka-rule">※ペンネームでも結構です。<br /></p>
+        <label for = 'var1' class = "waka-label">詠む</label>
+        <textarea type = 'text' name = 'var1' id = 'var1' cols = '13' rows = '5'></textarea> 
+        <p class = "waka-rule">※五、七、五、七、七で詠んでください。<br /></p>
+        <label for = 'address' class = "waka-label">連絡先</label>
+        <textarea type = 'text' name = 'address' id = 'address' rows = '1'></textarea>
+        <p class = "waka-rule">※メールアドレスを入力してください。<br /></p>
+      </form>
+      <p id = "button"><button class="btn btn-info btn-large" id = "submit"><i class="icon-white icon-pencil"></i> 投稿する</button></p>
+    <div class = "error"></div>
+    </div><!--//waka-form-input-->
+    <div id = "loading"></div>
+    <div id ="waka-form-appear-cover">
+      <div id ="waka-form-appear">
+        <div class ='tate-area'>  
+          <div class ='tate-line'></div>
+        </div>
+      </div>
+    </div> 
+  </div><!--//postArea-->
+</div><!--//container-->
+<div id = "footer">
+<div id = 'waka-title'>最近の投稿</div>
+  <div id ="recent-post">
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+  });
+</script>
+</body>
+</html>
