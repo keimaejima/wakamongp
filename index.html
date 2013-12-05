@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="和歌もんGP(グランプリ)とは、伊豆市、天城を中心に伊豆の豊かな自然、温泉、グルメ、そして旅館などを題材にした五、七、五、七、七の和歌を詠んで、伊豆市各所に設けられた投稿BOXおよびwebページから投稿していただくという企画です。">
+<meta name="keywords" content="伊豆市,和歌,若者,wakamongp,GP,天城,toiz">
+<meta name="author" content="toizinc">
+<title>和歌もんグランプリ</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+<link href="./css/top.css" rel="stylesheet" type="text/css">
+<link href="./css/reset.css" rel="stylesheet" type="text/css">
+<link href="./bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=237534333016316";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id ="container">
+<div id ="without-foot">
+<div id ="header">
+ </div>
+
+  <div id ="top">
+		<img src ="images/wakamonHP2.png" alt ="topImg" width="100%">
+	</div>
+	<div id ="content">
+		<p id ="button">
+			<a href ="./post.html"><button class="btn btn-info btn-large"><i class="icon-white icon-pencil"></i> 投稿する</button></a>		
+		</p>
+	</div>
+	<div id ="content2">
+		和歌もんGP(グランプリ)とは、伊豆市、天城を中心に伊豆の豊かな自然、温泉、グルメ、そして旅館などを題材にした<br />
+		五、七、五、七、七、31文字の和歌を詠んで、伊豆市各所に設けられた投稿BOXおよび本ページから投稿していただく企画です。<br />
+		和歌は1300年前の書物、「古事記」に初めて登場したと言われています。そんな歴史ある表現方法で伊豆の魅力を伝えてみませんか？<br />
+		優秀作品は初秋に発表する予定です。老若男女問わず、「和歌もん」の皆さん、どしどし投稿してくださいね！ 
+	</div>
+</div>	
+  <div id = "sponcer-area">
+	Touch me!　スポンサーの皆様
+		<p class = "description">
+				<span class ="eachSp"><a href ="http://www.ochiairou.com/"><img src ="images/ochiairoulogo.png"></a></span>
+				<span class ="eachSp"><a href ="http://www.arcanaresorts.com/"><img src ="images/arcana.jpg"></a></span>
+				<span class ="eachSp"><img src ="images/bosyu.gif"></span>
+				<span class ="eachSp"><img src ="images/bosyu.gif"></span>
+        <br />
+        <span class ="link-sponcer"><a href ="./sponcer.html">スポンサー一覧を見る</a></span>
+		</p>
+	</div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('#header').load('./static/header.html');    
+  });
+  //スポンサー下からにゅっと
+  $(document).ready(function(){
+	$("#sponcer-area").hover(function (){
+	      $('#without-foot').fadeTo('slow',0.33); 
+        $(this).children(".description:hidden").animate(
+	        {height: "toggle",top: "toggle"},
+	        {duration: "normal", easing: "swing"}
+	      );
+	    },
+	    function (){
+	      $('#without-foot').fadeTo('slow',1); 
+	      $(this).children(".description:visible").animate(
+	        {height: "toggle",top: "toggle"},
+	        {duration: "normal", easing: "swing"}
+	      );
+	});
+});
+$(document).ready(function(){
+  setInterval(function(){
+        $('.link-sponcer').fadeOut(500,function(){$(this).fadeIn(500)});
+          },1000);
+});
+</script>
+</body>
+</html>
