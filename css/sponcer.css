@@ -1,0 +1,98 @@
+body{
+    background-image:url(../images/bg1.jpg);
+}
+#container{
+  margin:0 auto;
+  width:600px;
+  height:1500px;
+
+}
+#content{
+  margin:150px auto 0 auto;
+  height:1350px;
+  text-align:center;
+}
+.each-sp{
+  height:300px;
+
+}
+#title{
+  font-size:50px;
+  color:#191970;
+  font-family:'ＭＳ 明朝';
+  font-weight:900;
+  margin-bottom:50px;
+}
+#content .each-sp:nth-of-type(2){
+  text-align:left;
+  font-family: Bodoni serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: #2c2c2c 3px 3px 5px;
+  color:#f0ffff;
+  font-size:35px;
+  line-height:200%;
+}
+#content .each-sp:nth-of-type(3){
+  text-align:left;
+  font-family: Bodoni serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: #2c2c2c 3px 3px 5px;
+  color:#daa520;
+  font-size:35px;
+  line-height:200%;
+}
+#content .each-sp:nth-of-type(4){
+  text-align:left;
+  font-family: Bodoni serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: #2c2c2c 3px 3px 5px;
+  color:#e6e6fa;
+  font-size:35px;
+  line-height:200%;
+}
+#content .each-sp:nth-of-type(5){
+  text-align:left;
+  font-family: Bodoni serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: #2c2c2c 3px 3px 5px;
+  color:#8b4513;
+  font-size:35px;
+  line-height:200%;
+}
+.sp-rank{
+  border-bottom:dotted 1px #696969;
+}
+.title-text{
+  font-size:15px;
+  color:#696969;
+}
+.sp-logo{
+  margin-top:15px;
+}
+/*上に戻るボタン*/
+div.tothetopfixed {
+	position: fixed;
+	left: 85px;
+	bottom: 20px;
+	z-index: 1500;
+	width:200px;
+}	
+
+div.tothetopfixed a {
+	display: block;
+	color: #333333;
+	padding: 10px;
+	margin: 0;
+	background-color: #a9a9a9;
+	border-radius: 5px;
+	font-size: 0.8em;
+}
+
+div.tothetopfixed a:hover {
+	background: #dcdcdc
+	color: #ffffff;
+}
